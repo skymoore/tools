@@ -1,7 +1,7 @@
 FROM --platform=linux/amd64 archlinux:latest
 
-RUN pacman -Syyu && \
-    pacman -S --noconfirm \
+RUN pacman -Syyu --noconfirm && \
+    pacman -S -vv --noconfirm \
     wget \
     gnu-netcat \
     aws-cli \
@@ -14,5 +14,6 @@ RUN pacman -Syyu && \
     screen \
     tmux \
     httpie \
-    python3
+    python3 \
+    vim
 
