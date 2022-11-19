@@ -5,6 +5,7 @@ RUN pacman -Syyu --noconfirm && \
     wget \
     gnu-netcat \
     aws-cli \
+    bind \
     net-tools \
     inetutils \
     openssh \
